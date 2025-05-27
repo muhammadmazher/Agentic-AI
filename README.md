@@ -9,7 +9,7 @@ uv help
 ```
 uv init --package project-1
 ```
-This command sets up a project structured for packaging, placing your code inside a src directory, aligning with best practices for Python project structures.
+This command sets up a project structured for packaging, placing your code inside a `src` directory, aligning with best practices for Python project structures.
 ## 📂 Open the Project in VS Code
 ````
 cd explore-uv
@@ -23,15 +23,20 @@ Use `code .` on terminal or open the directory `project-1` in VSCode
 ```
 uv venv
 ```
-Activate virtual environment:
+## ⚙️ Activate the Virtual Environment
 
+**On macOS/Linux:**
 ```
 source .venv/bin/activate
-
-In Windows 
-\explore-uv\.venv\Scripts\activate
 ```
-Select Recommended Python Interpreter (./.venv/bin/python) created by virtual envirnoment in VSCode
+**In Windows** 
+```
+.venv\Scripts\activate
+```
+Then in VSCode, select the recommended Python interpreter:
+`./.venv/bin/python` or `./.venv/Scripts/python.exe`
+
+## ▶️ Run the Project
 ```
 uv run explore-uv
 ```
