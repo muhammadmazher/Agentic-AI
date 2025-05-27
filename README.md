@@ -1,42 +1,51 @@
-# UV Project Create and Setup VS Code
+ # 🚀 Python UV 
+ **The Fastest Python Package Manager**
 
-## 📦 Check UV Version and Help
-```
-uv version
-uv help
-```
-## 🛠️ Initialize New Project
-```
-uv init --package project-1
-```
-This command sets up a project structured for packaging, placing your code inside a `src` directory, aligning with best practices for Python project structures.
-## 📂 Open the Project in VS Code
-````
-cd explore-uv
+## 📚 Learning Resources
 
-code .
-````
+- 📘 [Python UV: The Ultimate Guide to the Fastest Python Package Manager](https://www.datacamp.com/tutorial/python-uv)  
+- 📖 [Official UV Docs](https://docs.astral.sh/uv/)
+- 🏃 [Running Scripts with UV](https://docs.astral.sh/uv/guides/scripts/)
+- 🧩 [Working on Projects](https://docs.astral.sh/uv/guides/projects/)
+- 🧾 [CLI Reference](https://docs.astral.sh/uv/reference/cli/)
+- 🎥 [Watch: Python Setup, Simplified: A Complete "uv" Tutorial!](https://www.youtube.com/watch?v=-J5SnWR4UXw)
 
-Use `code .` on terminal or open the directory `project-1` in VSCode
 
-## 🌐 Create a Virtual Environment
-```
-uv venv
-```
-## ⚙️ Activate the Virtual Environment
+## 🧠 Cursor Rules (Best Practices)
 
-**On macOS/Linux:**
-```
-source .venv/bin/activate
-```
-**In Windows`:** 
-```
-.venv\Scripts\activate
-```
-Then in VSCode, select the recommended Python interpreter:
-`./.venv/bin/python` or `./.venv/Scripts/python.exe`
+When working in Python always use UV as package manager.
 
-## ▶️ Run the Project
+Instead of writing code you can use cli to run commands where it's efficient like when prompted to create new project using uv use:
+
+Packaged applications Many use-cases require a package. For example, if you are creating a command-line interface that will be published to PyPI or if you want to define tests in a dedicated directory.
+
+### ✅ Why Use UV?
+
+- Super fast and modern
+- Clean project management
+- Simplifies scripts and dependencies
+
+
+## 🧪 Packaged Applications with UV
+
+> Many use-cases require a package — especially if:
+> - You're creating a **CLI tool** (to be published on PyPI)
+> - You want to organize **tests** in a dedicated directory
+
+Use the `--package` flag to create a project as a proper Python package:
+
 ```
-uv run explore-uv
+uv init --package example-pkg
 ```
+## 📦 Installing Packages in Your Project
+To add a new dependency inside your UV-managed project:
+```
+uv add package-name
+```
+Example:
+```
+uv add fastapi
+```
+UV will handle dependency resolution, lockfiles, and installation efficiently.
+
+✨ Stay modern, stay fast — use uv!
