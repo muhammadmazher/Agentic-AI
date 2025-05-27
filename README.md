@@ -29,7 +29,7 @@ uv venv
 ```
 source .venv/bin/activate
 ```
-**In Windows** 
+**In Windows`:** 
 ```
 .venv\Scripts\activate
 ```
